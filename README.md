@@ -36,12 +36,22 @@ int main()
 Note: you have to write an image to the MJPEGWriter class before start the server.
 
 ## Compiling
+
+On debian based systems you can install the required libraries with:
+
+```sh
+sudo apt-get install libopencv-core-dev libopencv-calib3d-dev libopencv-dnn-dev libopencv-objdetect libopencv-photo-dev libopencv-stitching-dev libopencv-video-dev
+```
+
 Compile with C++11, OpenCV libraries and pthread:
 
 
 ```sh
 g++ MJPEGWriter.cpp main.cpp -o MJPEG -lpthread -lopencv_core -lopencv_videoio -lopencv_imgcodecs -std=c++11
 ```
+
+In case the following error appears:
+`fatal error: opencv2/opencv.hpp: No such file or directory`, then add `-I/usr/include/opencv4/` to the compile command.
 
 ## Roadmap
 You can follow the development and request new features at https://trello.com/b/OZVtAu05
