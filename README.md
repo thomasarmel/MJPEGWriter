@@ -40,7 +40,7 @@ Note: you have to write an image to the MJPEGWriter class before start the serve
 On debian based systems you can install the required libraries with:
 
 ```sh
-sudo apt-get install libopencv-core-dev libopencv-calib3d-dev libopencv-dnn-dev libopencv-objdetect libopencv-photo-dev libopencv-stitching-dev libopencv-video-dev
+sudo apt-get install libopencv-core-dev libopencv-calib3d-dev libopencv-dnn-dev libopencv-objdetect-dev libopencv-photo-dev libopencv-stitching-dev libopencv-video-dev
 ```
 
 Compile with C++11, OpenCV libraries and pthread:
